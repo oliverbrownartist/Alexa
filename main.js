@@ -4,7 +4,8 @@ function preload(){ // preload video/media/audio files and create DOM elements
     vid_earplug.hide();  // disable video visibility
     vid_overdub = createVideo(['assets/Alexa_overdub.mp4']); // load "overdub" video element
     vid_overdub.hide(); // disable video visibility
-    vid_binnings = createVideo(['assets/Alexa_binnings.mp4']); // load "binnings" video element (for ad #2)
+    vid_binnings = createVideo(['assets/alexa_binnings.mp4']); // load "binnings" video element (for ad #2)
+    // note this file begins with a lower-case "a", unlike the rest...not sure why but GH won't let me change the file name so here we are
     vid_binnings.hide(); // disable video visibility
     vid_brewzos = createVideo(['assets/Alexa_brewzos.mp4']); // load "brewzos" video element (for ad #3)
     vid_brewzos.hide(); // disable video visibility
