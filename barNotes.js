@@ -328,6 +328,15 @@ function calcPitch(cp_pitchIndex){ // take the pitch index as argument
 function nextNote(){
     if(barProgress == barNotes.length - 1){ // check if the bar is finished
         
+        metro20.stop();
+        metro30.stop();
+        metro45.stop();
+        metro58.stop();
+        metro77.stop();
+        metro83.stop();
+        metro92.stop();
+        metro101.stop();
+        
         barProgress = 0; // reset the progress through the bar
 
         // note: I tried using something more like passing a function label in here instead of calling each case separately, but given the difficulties with p5.Speech/SpeechRec objects contained in events, it wouldn't let me :(
@@ -396,6 +405,7 @@ function nextNote(){
     else if(barProgress<barNotes.length){ // if the bar is incomplete
 
         if (eventIndex == 51){
+            metro101.stop();
             newStaves();
             event48a();
         }
