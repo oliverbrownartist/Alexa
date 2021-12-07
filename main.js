@@ -5,7 +5,6 @@ function preload(){ // preload video/media/audio files and create DOM elements
     vid_overdub = createVideo(['assets/Alexa_overdub.mp4']); // load "overdub" video element
     vid_overdub.hide(); // disable video visibility
     vid_binnings = createVideo(['assets/Alexa_binnings.mp4']); // load "binnings" video element (for ad #2)
-    // note this file begins with a lower-case "a", unlike the rest...not sure why but GH won't let me change the file name so here we are
     vid_binnings.hide(); // disable video visibility
     vid_brewzos = createVideo(['assets/Alexa_brewzos.mp4']); // load "brewzos" video element (for ad #3)
     vid_brewzos.hide(); // disable video visibility
@@ -23,6 +22,14 @@ function preload(){ // preload video/media/audio files and create DOM elements
     trill = createAudio(['assets/trill.wav']); // create "level up" audio element
     barChange = createAudio(['assets/barChange.wav']); // load "new bar" audio element
     celloSuite = createAudio(['assets/celloSuite.wav']); // load audio element for the final event
+    metro20 = createAudio(['assets/metronome_20bpm.wav']);
+    metro30 = createAudio(['assets/metronome_30bpm.wav']);
+    metro45 = createAudio(['assets/metronome_45bpm.wav']);
+    metro58 = createAudio(['assets/metronome_58bpm.wav']);
+    metro77 = createAudio(['assets/metronome_77bpm.wav']);
+    metro83 = createAudio(['assets/metronome_83bpm.wav']);
+    metro92 = createAudio(['assets/metronome_92bpm.wav']);
+    metro101 = createAudio(['assets/metronome_101bpm.wav']);
 
     tempo_20 = loadImage('assets/tempo_20.png');
     tempo_30 = loadImage('assets/tempo_30.png');
@@ -36,7 +43,7 @@ function preload(){ // preload video/media/audio files and create DOM elements
 
 
 // initialise global variables
-let cnv, vid_earplug, vid_overdub, vid_binnings, vid_academy, vid_brewzos, bStart, splitString, notehead, vertSpace, targetPitch, staveRange, accRange, pitchIndex, LLParam, nStaveIndex, staveIndexConstraint; // define unassigned labels
+let cnv, vid_earplug, vid_overdub, vid_binnings, vid_academy, vid_brewzos, bStart, splitString, notehead, vertSpace, targetPitch, staveRange, accRange, pitchIndex, LLParam, nStaveIndex, staveIndexConstraint, metroFiles; // define unassigned labels
 let nextEvent = 0; // initialise nextEvent as zero
 let eventIndex = 0; // helps run through event/function array as a manual override
 const fundFreq = 65.41; // define the fundamental frequency for all notes (not used in this version since pitch detection temporarily disabled)
@@ -54,6 +61,8 @@ function setup(){ // called once at the start of the program
     cnv.position(windowWidth/2-750, windowHeight/2-350);
     vertSpace = (height-400)/10; // define the height of various elements within the canvas based on the height of the canvas
     colorMode(HSB, 360, 100, 100, 100); // change colour mode to hue-saturation-brightness with custom parameter scales
+    
+    metroFiles = [metro20, metro30, metro45, metro58, metro77, metro83, metro92, metro101];
 }
 
 //-------------------------------------------------------------------------------------------------------
