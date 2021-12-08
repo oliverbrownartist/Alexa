@@ -81,11 +81,11 @@ function event3(){ // BAR 0.0
     // 3 n/b, crotchet only, no acc, bottom 2 open strings only
     // no DBL
     barChange.play(); // play the "new-bar" sound effect
+    metro20.loop();
     nextEvent = 4; // define the next event (called within barNotes.js) as event 4
     staveIndexConstraint = 0; 
     createBar(2, 0, 4, 0, 0, false); // create new bar (function defined/described in staveNotes.js)
     image(tempo_20, 150, 65, 200, 110);
-    metro20.loop();
 }  
 
 function event4(){ // BAR 0.1
@@ -98,7 +98,6 @@ function event4(){ // BAR 0.1
     staveIndexConstraint = 0; 
     createBar(2, 0, 4, 0, 0, false); // create new bar (function defined/described in staveNotes.js)
     image(tempo_20, 150, 65, 200, 110);
-    metro20.loop();
 }
 
 function event5(){ // BAR 0.2
@@ -111,7 +110,6 @@ function event5(){ // BAR 0.2
     staveIndexConstraint = 0; 
     createBar(2, 0, 4, 0, 0, true) // create new bar (function defined/described in staveNotes.js)
     image(tempo_20, 150, 65, 200, 110);
-    metro20.loop();
 } 
 
 function event6(){ // LEVEL-UP
@@ -155,11 +153,11 @@ function event8(){ // BAR 0.3
     // 4 n/b, crotchet only, no acc, any open string
     // no DBL
     barChange.play(); // play the "new-bar" sound effect
+    metro30.loop();
     nextEvent = 9; // define the next event (called within barNotes.js) as event 9
     staveIndexConstraint = 1; 
     createBar(4, 0, 9, 0, 0, false);  // create new bar (function defined/described in staveNotes.js)
     image(tempo_30, 150, 65, 200, 110);
-    metro30.loop();
 }
 
 function event9(){ // BAR 0.4
@@ -172,7 +170,6 @@ function event9(){ // BAR 0.4
     staveIndexConstraint = 1; 
     createBar(4, 0, 9, 0, 0, false); // create new bar (function defined/described in staveNotes.js)
     image(tempo_30, 150, 65, 200, 110);
-    metro30.loop();
 }
 
 function event10(){ // BAR 0.5
@@ -185,7 +182,6 @@ function event10(){ // BAR 0.5
     staveIndexConstraint = 1; 
     createBar(4, 0, 9, 0, 0, true); // create new bar (function defined/described in staveNotes.js)
     image(tempo_30, 150, 65, 200, 110);
-    metro30.loop();
 }
 
 function event11(){ // LEVEL-UP
@@ -229,11 +225,11 @@ function event13(){ // BAR 0.6
     // 5 n/b, crotchet only, no acc, any notes
     // no DBL
     barChange.play(); // play the "new-bar" sound effect
+    metro45.loop();
     nextEvent = 14; // define the next event (called within barNotes.js) as event 14
     staveIndexConstraint = 2;
     createBar(5, 0, 25, 0, 0, false); // create new bar (function defined/described in staveNotes.js)
     image(tempo_45, 150, 65, 200, 110);
-
 }
 
 function event14(){ // BAR 0.7
@@ -246,7 +242,6 @@ function event14(){ // BAR 0.7
     staveIndexConstraint = 2;
     createBar(5, 0, 25, 0, 0, false); // create new bar (function defined/described in staveNotes.js)
     image(tempo_45, 150, 65, 200, 110);
-    metro45.loop();
 }
 
 function event15(){ // BAR 0.8
@@ -259,7 +254,6 @@ function event15(){ // BAR 0.8
     staveIndexConstraint = 2;
     createBar(5, 0, 25, 0, 0, true); // create new bar (function defined/described in staveNotes.js)
     image(tempo_45, 150, 65, 200, 110);
-    metro45.loop();
 }
 
 function event16a(){ // PRE-AD MESSAGE #0
@@ -365,11 +359,11 @@ function event21(){ // BAR 1.0
     //6 n/b, crotchet/minim, no acc, any
     // no DBL
     barChange.play(); // play the "new-bar" sound effect
+    metro58.loop();
     nextEvent = 22; // define the next event (called within barNotes.js) as event 22
     staveIndexConstraint = 2;
     createBar(6, 0, 25, 0, 2, false);  // create new bar (function defined/described in staveNotes.js)
     image(tempo_58, 150, 65, 200, 110);
-    metro58.loop();
 }
 
 function event22(){ // BAR 1.0
@@ -382,7 +376,6 @@ function event22(){ // BAR 1.0
     staveIndexConstraint = 2;
     createBar(6, 0, 25, 0, 2, false);  // create new bar (function defined/described in staveNotes.js)
     image(tempo_58, 150, 65, 200, 110);
-    metro58.loop();
 }
 
 function event23(){ // BAR 1.0
@@ -395,7 +388,6 @@ function event23(){ // BAR 1.0
     staveIndexConstraint = 2;
     createBar(6, 0, 25, 0, 2, true);  // create new bar (function defined/described in staveNotes.js)
     image(tempo_58, 150, 65, 200, 110);
-    metro58.loop();
 }
 
 function event24(){ // LEVEL-UP
@@ -438,11 +430,11 @@ function  event26(){ // BAR 1.3
     // 7 n/b, any, no acc, any
     // no DBL
     barChange.play(); // play the "new-bar" sound effect
+    metro77.loop();
     nextEvent = 27; // define the next event (called within barNotes.js) as event 27
     staveIndexConstraint = 2;
     createBar(7, 0, 25, 0, 3, false);  // create new bar (function defined/described in staveNotes.js)
     image(tempo_77, 150, 65, 200, 110);
-    metro77.loop();
 }
 
 function  event27(){ // BAR 1.4
@@ -455,7 +447,6 @@ function  event27(){ // BAR 1.4
     staveIndexConstraint = 2;
     createBar(7, 0, 25, 0, 3, false);  // create new bar (function defined/described in staveNotes.js)
     image(tempo_77, 150, 65, 200, 110);
-    metro77.loop();
 }
 
 function  event28(){ // BAR 1.5
@@ -468,7 +459,6 @@ function  event28(){ // BAR 1.5
     staveIndexConstraint = 2;
     createBar(7, 0, 25, 0, 3, true);  // create new bar (function defined/described in staveNotes.js)
     image(tempo_77, 150, 65, 200, 110);
-    metro77.loop();
 }
 
 function event29a(){ // PRE-AD MESSAGE #1
@@ -578,11 +568,11 @@ function event34(){ // BAR 2.0
     // 8 n/b, any, nat/flat, any
     // no DBL
     barChange.play(); // play the "new-bar" sound effect
+    metro83.loop();
     nextEvent = 35; // define the next event (called within barNotes.js) as event 35
     staveIndexConstraint = 2;
     createBar(8, 0, 25, 3, 3, false); // create new bar (function defined/described in staveNotes.js)
     image(tempo_83, 150, 65, 200, 110);
-    metro83.loop();
 }
 
 function event35(){ // BAR 2.1
@@ -595,7 +585,6 @@ function event35(){ // BAR 2.1
     staveIndexConstraint = 2;
     createBar(8, 0, 25, 3, 3, true); // create new bar (function defined/described in staveNotes.js)
     image(tempo_83, 150, 65, 200, 110);
-    metro83.loop();
 }
 
 function event36a(){ // PRE-AD MESSAGE #2
@@ -705,11 +694,11 @@ function event41(){ // BAR 3.0
     // 9 n/b, any, any, any
     // yes DBL
     barChange.play(); // play the "new-bar" sound effect
+    metro92.loop();
     nextEvent = 42; // define the next event (called within barNotes.js) as event 42 (actually 42a)
     staveIndexConstraint = 3;
     createBar(9, 0, 25, 3, 3, true);  // create new bar (function defined/described in staveNotes.js)
     image(tempo_92, 150, 65, 200, 110);
-    metro92.loop();
 }
 
 function event42a(){ // PRE-AD MESSAGE #3
@@ -818,11 +807,11 @@ function event47(){ // BAR 3.0
     // 10 n/b, any, any, any
     // yes DBL
     barChange.play(); // play the "new-bar" sound effect
+    metro101.loop();
     nextEvent = 48; // define the next event (called within barNotes.js) as event 48 (actually 48a)
     staveIndexConstraint = 3;
     createBar(10, 0, 25, 2, 3, true);  // create new bar (function defined/described in staveNotes.js)
     image(tempo_101, 150, 65, 200, 110);
-    metro101.loop();
 }
 
 function event48a(){ // PRE-AD MESSAGE #4
