@@ -41,9 +41,10 @@ function event1(){ // SPEAK: INTRO
     eventIndex = 1;
     speak1 = new p5.Speech(); // initialise new speech synthesis object
     speak1.speak( // begin 'utterance' of the text/script below
-        `Hi ${nameString}!. Please wait while I compose you some sight reading for your rehearsal today. Reminder: your target rehearsal duration is twenty minutes. OK, I\'m ready now. When you are ready to begin your first passage, say, "ready".`
+        `Hi ${nameString}!. Please wait while I compose you some sight reading for your rehearsal today. Reminder: your target rehearsal duration is twenty minutes.`
         );
-    sleep(15000).then(() => { // wait until 15s have elapsed
+    speak1.speak(`While I'm working, you might want to check the tuning on that dee string. OK, I\'m ready now. When you are ready to begin your first passage, say, "ready".`);
+    sleep(20000).then(() => { // wait until 15s have elapsed
         console.log("(SLEEP) ENDED 2"); // log end of wait
         event2(); // proceed to event 2
     });
