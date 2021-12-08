@@ -328,14 +328,14 @@ function calcPitch(cp_pitchIndex){ // take the pitch index as argument
 function nextNote(){
     if(barProgress == barNotes.length - 1){ // check if the bar is finished
         
-        metro20.stop();
-        metro30.stop();
-        metro45.stop();
-        metro58.stop();
-        metro77.stop();
-        metro83.stop();
-        metro92.stop();
-        metro101.stop();
+        // metro20.stop();
+        // metro30.stop();
+        // metro45.stop();
+        // metro58.stop();
+        // metro77.stop();
+        // metro83.stop();
+        // metro92.stop();
+        // metro101.stop();
         
         barProgress = 0; // reset the progress through the bar
 
@@ -348,6 +348,7 @@ function nextNote(){
                 event5(); // proceed to event 5
                 break;
             case 6:
+                metro20.stop();
                 event6(); // proceed to event 6
                 break;
             case 9:
@@ -357,6 +358,7 @@ function nextNote(){
                 event10(); // proceed to event 10
                 break;
             case 11:
+                metro30.stop();
                 event11(); // proceed to event 11
                 break;
             case 14:
@@ -366,6 +368,7 @@ function nextNote(){
                 event15(); // proceed to event 15
                 break;
             case 16: // "16" used instead of "16a" to avoid passing strings into the switch statement
+                metro45.loop();    
                 event16a(); // proceed to event 16a
                 break;
             case 22:
@@ -375,6 +378,7 @@ function nextNote(){
                 event23(); // proceed to event 23
                 break;
             case 24:
+                metro58.loop();
                 event24(); // proceed to event 24
                 break;
             case 27:
@@ -384,18 +388,22 @@ function nextNote(){
                 event28(); // proceed to event 28
                 break;
             case 29: // "29" used instead of "29a" to avoid passing strings into the switch statement
+                metro77.loop();
                 event29a(); // proceed to event 29a
                 break;
             case 35:
                 event35(); // proceed to event 35
                 break;
             case 36: // "36" used instead of "36a" to avoid passing strings into the switch statement
+                metro83.loop();    
                 event36a(); // proceed to event 36a
                 break;
             case 42: // "42" used instead of "42a" to avoid passing strings into the switch statement
+                metro92.loop();
                 event42a(); // proceed to event 42a
                 break;
             case 48: // "48" used instead of "48a" to avoid passing strings into the switch statement
+                metro101.loop();    
                 event48a(); // proceed to event 48a
                 break;
         }
