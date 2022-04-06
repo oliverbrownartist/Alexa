@@ -50,7 +50,7 @@ const fundFreq = 65.41; // define the fundamental frequency for all notes (not u
 let barNotes = []; // initialise empty array to be filled every time a bar is created
 let barProgress = 0; // set the initial progress through each bar to zero
 let openStringNotes = [0, 4, 8, 12];
-let nameString = "Kay Mak";
+let nameString = "David";
 
 //-------------------------------------------------------------------------------------------------------
 //                        SETUP()
