@@ -115,6 +115,7 @@ function event5(){ // BAR 0.2
 
 function event6(){ // LEVEL-UP
     console.log("EVENT 6"); // log the beginning of new event
+    metro20.stop();
     eventIndex = 6;
     // synth: let's add some more strings
     trill.play(); // play "level-up" sound effect
@@ -260,6 +261,7 @@ function event15(){ // BAR 0.8
 function event16a(){ // PRE-AD MESSAGE #0
     console.log("EVENT 16a"); // log the beginning of new event
     eventIndex = 16;
+    metro45.stop();
     newStaves(); // drawn new blank staves
     speak16 = new p5.Speech(); // initialise new speech synthesis object
     speak16.speak(   // begin 'utterance' of the text/script below
@@ -394,6 +396,7 @@ function event23(){ // BAR 1.0
 function event24(){ // LEVEL-UP
     console.log("EVENT 24"); // log the beginning of new event
     eventIndex = 25;
+    metro58.stop();
     trill.play(); // play "level-up" sound effect
     newStaves(); // drawn new blank staves
     speak24 = new p5.Speech(); // initialise new speech synthesis object
@@ -591,6 +594,7 @@ function event35(){ // BAR 2.1
 function event36a(){ // PRE-AD MESSAGE #2
     console.log("EVENT 36a"); // log the beginning of new event
     eventIndex = 38;
+    metro83.stop();
     newStaves(); // drawn new blank staves
     speak36 = new p5.Speech(); // initialise new speech synthesis object
     speak36.speak(   // begin 'utterance' of the text/script below
@@ -705,6 +709,7 @@ function event41(){ // BAR 3.0
 function event42a(){ // PRE-AD MESSAGE #3
     console.log("EVENT 42a"); // log the beginning of new event
     eventIndex = 45;
+    metro92.stop();
     // synth: to continue
     newStaves(); // drawn new blank staves
     speak42 = new p5.Speech(); // initialise new speech synthesis object
@@ -818,6 +823,7 @@ function event47(){ // BAR 3.0
 function event48a(){ // PRE-AD MESSAGE #4
     console.log("EVENT 48a"); // log the beginning of new event
     eventIndex = 52;
+    metro101.stop();
     // synth: to continue
     newStaves(); // drawn new blank staves
     speak48 = new p5.Speech(); // initialise new speech synthesis object
