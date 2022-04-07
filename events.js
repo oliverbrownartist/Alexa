@@ -290,7 +290,7 @@ function event16(){ // ADVERTISEMENT #0 (EARPLUGS)
 //         vid_earplug.hide(); // disable video visibility
         // event17(); // proceed to event 17
         
-    });
+//     });
 }
 
 function event17(){ // CHECKPOINT #0
@@ -502,7 +502,7 @@ function event29(){ // ADVERTISEMENT #1 (OVERDUB)
 //     sleep(29000).then(() => { // wait until 29s have elapsed
 //         vid_overdub.hide(); // disable video visibility
 //         event30();  // proceed to event 30
-    });
+//     });
 }
 
 function event30(){ // CHECKPOINT #1
@@ -631,7 +631,7 @@ function event36(){ // ADVERTISEMENT #2 (BINNINGS)
 //     sleep(32000).then(() => { // wait until 32s have elapsed
 //         vid_binnings.hide(); // disable video visibility
 //         event37(); // proceed to event 37
-    });
+//     });
 }
 
 function event37(){ // CHECKPOINT #2
@@ -746,7 +746,7 @@ function event42(){ // ADVERTISEMENT #3 (BREWZOS)
 //     sleep(28000).then(() => {  // wait until 28s have elapsed
 //         vid_brewzos.hide(); // disable video visibility
 //         event43(); // proceed to event 43
-    });
+//     });
 }
 
 function event43(){ // CHECKPOINT #3
@@ -862,7 +862,7 @@ function event48(){ // ADVERTISEMENT #4 (ACADEMY)
 //     sleep(39000).then(() => { // wait until 39s have elapsed
 //         vid_academy.hide(); // disable video visibility
 //         event49(); // proceed to event 49
-    });
+//     });
 }
 
 function event49(){ // CHECKPOINT #4
