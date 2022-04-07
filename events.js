@@ -189,6 +189,7 @@ function event10(){ // BAR 0.5
 function event11(){ // LEVEL-UP
     console.log("EVENT 11"); // log the beginning of new event
     eventIndex = 11;
+    metro30.stop();
     // synth: you're doing great...
     trill.play(); // play "level-up" sound effect
     newStaves(); // drawn new blank staves
