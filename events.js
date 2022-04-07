@@ -469,6 +469,7 @@ function  event28(){ // BAR 1.5
 function event29a(){ // PRE-AD MESSAGE #1
     console.log("EVENT 29a"); // log the beginning of new event
     eventIndex = 30;
+    metro77.stop();
     newStaves(); // drawn new blank staves
     speak29 = new p5.Speech(); // initialise new speech synthesis object
     speak29.speak(   // begin 'utterance' of the text/script below
