@@ -284,9 +284,12 @@ function event16(){ // ADVERTISEMENT #0 (EARPLUGS)
     vid_earplug.play(); // play the video
     vid_earplug.size(1440,810); // set video size (W,H)
     vid_earplug.position(windowWidth/2-720, windowHeight/2-405);
-    sleep(7500).then(() => { // wait until 7.5s have elapsed
-        vid_earplug.hide(); // disable video visibility
-        event17(); // proceed to event 17
+   
+    // commenting this out since was happening too quickly
+//     sleep(7500).then(() => { // wait until 7.5s have elapsed
+//         vid_earplug.hide(); // disable video visibility
+        // event17(); // proceed to event 17
+        
     });
 }
 
@@ -294,6 +297,7 @@ function event17(){ // CHECKPOINT #0
     console.log("EVENT 17"); // log the beginning of new event
     eventIndex = 18;
     cnv.show();
+    vid_earplug.hide();
     newStaves(); // draw new blank staves
     speak17 = new p5.Speech(); // initialise new speech synthesis object
     speak17.speak(   // begin 'utterance' of the text/script below
@@ -494,9 +498,10 @@ function event29(){ // ADVERTISEMENT #1 (OVERDUB)
     vid_overdub.play(); // play the video
     vid_overdub.size(1440,810); // set video size (W,H)
     vid_overdub.position(windowWidth/2-720, windowHeight/2-405);
-    sleep(29000).then(() => { // wait until 29s have elapsed
-        vid_overdub.hide(); // disable video visibility
-        event30();  // proceed to event 30
+    // commenting out for now
+//     sleep(29000).then(() => { // wait until 29s have elapsed
+//         vid_overdub.hide(); // disable video visibility
+//         event30();  // proceed to event 30
     });
 }
 
@@ -504,6 +509,7 @@ function event30(){ // CHECKPOINT #1
     console.log("EVENT 30"); // log the beginning of new event
     eventIndex = 32;
     console.log(getAudioContext());
+    vid_overdub.hide();
     cnv.show();
     newStaves(); // drawn new blank staves
     speak30 = new p5.Speech(); // initialise new speech synthesis object
@@ -621,15 +627,17 @@ function event36(){ // ADVERTISEMENT #2 (BINNINGS)
     vid_binnings.play(); // play the video
     vid_binnings.size(1440,810); // set video size (W,H)
     vid_binnings.position(windowWidth/2-720, windowHeight/2-405);
-    sleep(32000).then(() => { // wait until 32s have elapsed
-        vid_binnings.hide(); // disable video visibility
-        event37(); // proceed to event 37
+    // commenting out for now
+//     sleep(32000).then(() => { // wait until 32s have elapsed
+//         vid_binnings.hide(); // disable video visibility
+//         event37(); // proceed to event 37
     });
 }
 
 function event37(){ // CHECKPOINT #2
     console.log("EVENT 37"); // log the beginning of new event
     eventIndex = 40;
+    vid_binnings.hide();
     cnv.show();
     newStaves(); // drawn new blank staves
     speak37 = new p5.Speech(); // initialise new speech synthesis object
@@ -734,9 +742,10 @@ function event42(){ // ADVERTISEMENT #3 (BREWZOS)
     vid_brewzos.play(); // play the video
     vid_brewzos.size(1440,810); // set video size (W,H)
     vid_brewzos.position(windowWidth/2-720, windowHeight/2-405);
-    sleep(28000).then(() => {  // wait until 28s have elapsed
-        vid_brewzos.hide(); // disable video visibility
-        event43(); // proceed to event 43
+    // commenting out for now
+//     sleep(28000).then(() => {  // wait until 28s have elapsed
+//         vid_brewzos.hide(); // disable video visibility
+//         event43(); // proceed to event 43
     });
 }
 
@@ -744,6 +753,7 @@ function event43(){ // CHECKPOINT #3
     console.log("EVENT 37"); // log the beginning of new event
     eventIndex = 47;
     // synth: to continue...
+    vid_brewzos.hide();
     cnv.show();
     newStaves(); // drawn new blank staves
     speak43 = new p5.Speech(); // initialise new speech synthesis object
@@ -848,15 +858,17 @@ function event48(){ // ADVERTISEMENT #4 (ACADEMY)
     vid_academy.play(); // play the video
     vid_academy.size(1440,810); // set video size (W,H)
     vid_academy.position(windowWidth/2-720, windowHeight/2-405);
-    sleep(39000).then(() => { // wait until 39s have elapsed
-        vid_academy.hide(); // disable video visibility
-        event49(); // proceed to event 49
+    // commenting out for now
+//     sleep(39000).then(() => { // wait until 39s have elapsed
+//         vid_academy.hide(); // disable video visibility
+//         event49(); // proceed to event 49
     });
 }
 
 function event49(){ // CHECKPOINT #4
     console.log("EVENT 49"); // log the beginning of new event
     eventIndex = 54;
+    vid_academy.hide();
     cnv.show();
     newStaves(); // drawn new blank staves
     // synth: to continue...
